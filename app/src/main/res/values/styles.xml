@@ -7,5 +7,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="CustomFrontStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">22sp</item>
+    </style>
 
 </resources>
