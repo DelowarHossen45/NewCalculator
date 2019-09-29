@@ -4,7 +4,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
+public class MainActivity extends AppCompatActivity {
+    TextView textView1, textView2;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
     ImageButton back;
     double valueOne=Double.NaN, valueTwo=Double.NaN,vpower;
     int action;
-    @Override
+    
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        textView1=(TextView)findViewById(R.id.content);
         textView2=(TextView)findViewById(R.id.result);
 
         zero = (Button)findViewById(R.id.b0);
@@ -51,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 textView1.setText(textView1.getText()+"0");
             }
         });
+    }
 
         one.setOnClickListener(new View.OnClickListener() {
             @Override
